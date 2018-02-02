@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<!-- saved from url=(0027)http://m2.baobaoqiming5.cn/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="applicable-device" content="mobile">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=720,width=device-width, initial-scale=1,  initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+    <title>八字起名</title>
+    <link rel="stylesheet" href="./files/style.css">
+    <link rel="stylesheet" href="./files/qiming.css">
+
+    <script src="./files/jquery.min.js"></script>
+    <script src="./files/core.js"></script>
+
+<script type="text/javascript" async="" src="./files/16a168f0af2da0c3c2.js"></script><link rel="stylesheet" type="text/css" href="./files/mobiscroll.2.13.2.css"></head>
+<body class="qm" style="">
+<div class="wrap ov">
+    <header class="sm_hd">
+        <h3 class="smTitle">八字起名</h3>
+    </header>
+
+    <link rel="stylesheet" href="./files/calendar.css">
+
+    <div class="sm_banner"><img src="./files/qm_banner.jpg" alt=""></div>
+    <ul class="clearfix sm_nav">
+        <li><a href="javascript:;" class="active" data-for="qmIntro" id="qmIntro_btn">八字起名</a></li>
+        <li><a href="http://m2.baobaoqiming5.cn/order" data-for="queryBox" id="queryBox_btn">订单查询</a></li>
+    </ul>
+
+    <div class="qmIntro">
+        <ul class="qmIntroList">
+            <li>正宗算法·精确计算五行含量</li>
+            <li>喜用神·需要什么则补什么</li>
+            <li>传承经典 去伪存真</li>
+            <li>优美、吉祥美名</li>
+        </ul>
+        <p class="qmIocn">参考国学经典,易经,诗经,唐诗,宋词等著作</p>
+    </div>
+
+
+    
+    <div class="sm_form">
+    <div class="qmTitle"><h4 class="qmIocn">起名必填信息</h4></div>
+    <div class="qm_form_2">
+        <span class="qm_form_bd qm_form_t_l"></span>
+        <span class="qm_form_bd qm_form_t_r"></span>
+        <span class="qm_form_bd qm_form_b_l"></span>
+        <span class="qm_form_bd qm_form_b_r"></span>
+        <form action="http://m2.baobaoqiming5.cn/" class="form_c" data-toggle="validator" role="form" method="post" id="orderForm">
+
+            <input type="hidden" name="sku_code" value="sku1496909892764gbh6pxe7w6">
+            <input type="hidden" name="buy_count" value="1">
+            <input type="hidden" name="type" value="1">
+
+
+            <ul>
+                <li>
+                    <span class="sm_form_name"><i></i>姓氏：</span>
+                    <div class="sm_form_txt">
+                        <input class="animated" style="width:100%;float:left" type="text" id="smname" name="surname" placeholder="请输入姓氏">
+                    </div>
+                </li>
+
+                <li>
+                    <span class="sm_form_name">性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别：</span>
+                    <div class="sm_form_txt sm_form_sex sex-selector">
+                        <span data-value="1" class="cur"><i></i><font> 男</font></span>
+                        <span data-value="0"><i></i><font> 女</font></span>
+                    </div>
+                </li>
+                <input type="hidden" name="sex" value="1">
+                <script>
+                  $(function () {
+                
+                    $('.sex-selector span').click(function (e) {
+                      e.preventDefault()
+                      $('.sex-selector span').removeClass('cur')
+                      $(this).addClass('cur')
+                      $('[name=sex]').val($(this).attr('data-value') )
+                    })
+                
+                    $('[name=sex]').val($('.sex-selector span.cur').attr('data-value') )
+                
+                  })
+                </script>
+                <li>
+                    <span class="sm_form_name">名字字数：</span>
+                    <div class="sm_form_txt sm_form_sex name-type-selector">
+                        <span data-value="2" class="cur"><i></i><font> 双名</font></span>
+                        <span data-value="1"><i></i><font> 单名</font></span>
+                    </div>
+                </li>
+                <input type="hidden" name="name_type" value="2">
+                <script>
+                  $(function () {
+                
+                    $('.name-type-selector span').click(function (e) {
+                      e.preventDefault()
+                      $('.name-type-selector span').removeClass('cur')
+                      $(this).addClass('cur')
+                      $('[name=name_type]').val($(this).attr('data-value') )
+                    })
+                
+                    $('[name=name_type]').val($('.name-type-selector span.cur').attr('data-value') )
+                
+                  })
+                </script>
+
+                <li>
+                    <span class="sm_form_name"><i></i>出生日期：</span>
+                    <div class="sm_form_txt">
+                        <span class="icon_right"></span>
+                        <input type="text" class="Js_date animated baby" data-input-id="baby_date" data-type="0" value="" placeholder="请选择您的生日" data-date="2018-2-2">
+                        <input type="hidden" name="baby_date" id="baby_date">
+
+                    </div>
+                </li>
+                <li>
+                    <span class="sm_form_name"><i></i>出生时辰：</span>
+                    <div class="sm_form_txt">
+                        <select align="center" class="sel fl hoerSec" name="baby_hour">
+                            <option value=""></option>
+                            <option value="00" selected="">00</option>
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                        </select>
+                        <label class="fl">时</label>
+                        <select class="sel fl minutesSel" name="baby_minutes">
+                            <option value=""></option>
+                            <option value="00" selected="">00</option>
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                            <option value="32">32</option>
+                            <option value="33">33</option>
+                            <option value="34">34</option>
+                            <option value="35">35</option>
+                            <option value="36">36</option>
+                            <option value="37">37</option>
+                            <option value="38">38</option>
+                            <option value="39">39</option>
+                            <option value="40">40</option>
+                            <option value="41">41</option>
+                            <option value="42">42</option>
+                            <option value="43">43</option>
+                            <option value="44">44</option>
+                            <option value="45">45</option>
+                            <option value="46">46</option>
+                            <option value="47">47</option>
+                            <option value="48">48</option>
+                            <option value="49">49</option>
+                            <option value="50">50</option>
+                            <option value="51">51</option>
+                            <option value="52">52</option>
+                            <option value="53">53</option>
+                            <option value="54">54</option>
+                            <option value="55">55</option>
+                            <option value="56">56</option>
+                            <option value="57">57</option>
+                            <option value="58">58</option>
+                            <option value="59">59</option>
+                        </select>
+                        <label class="fl" style="padding:0">分</label>
+                    </div>
+                </li>
+
+
+
+                <li>
+                    <span class="sm_form_name">手机号(选填)：</span>
+                    <div class="sm_form_txt">
+                        <input class="animated" style="width:100%;float:left" type="text" name="tel" placeholder="用于查看起名结果">
+                    </div>
+                </li>
+
+            </ul>
+        </form>
+        <div class="sm_btn m_b_36">
+            <p class=""><a href="javascript:;" id="cs"><i class="qmIocn">立即起名</i></a></p>
+            <p class="item_num">已有<span id="tjs">9559249</span>人选择智能起名，<font color="red">98.3%</font>好评</p>
+        </div>
+    </div>
+</div>
+
+<script>
+
+  $(function(){
+
+    $.s5_date_time('#orderForm [name=baby_datetime]')
+
+
+    $.s5_order_submit($('#orderForm'))
+
+
+    $("#cs").click(function(e){
+      e.preventDefault();
+      $('#orderForm').submit()
+    })
+
+  })
+
+</script>
+
+    <div class="sm_banner m_b_24"><img src="./files/qm_smBanner.jpg" alt=""></div>
+    <div class="qmAnli">
+        <div class="qmAnliTitle qmAliCon clearfix">
+            <h4 class="fl qnAl_left ribbon ribbon_left">八字起名</h4>
+            <h4 class="fr qnAl_right ribbon ribbon_right">其他机构</h4>
+        </div>
+        <p class="qmAnliTime qmAliCon">(案例：女子  公历生日 2015年8月25日 15点30分)</p>
+        <div class="qmAl_bazi qmAliCon clearfix m_b_24">
+            <div class="qmAlName">八字</div>
+            <div class="qnAl_left fl">
+                <table width="100%">
+                    <tbody><tr>
+                        <th>年</th>
+                        <th>月</th>
+                        <th>日</th>
+                        <th>时</th>
+                    </tr>
+                    <tr>
+                        <td>乙木</td>
+                        <td>甲木</td>
+                        <td>癸水</td>
+                        <td>庚金</td>
+                    </tr>
+                    <tr>
+                        <td>未土<i>己</i></td>
+                        <td>申金<i>庚</i></td>
+                        <td>酉金<i>辛</i></td>
+                        <td>申金<i>庚</i></td>
+                    </tr>
+                </tbody></table>
+            </div>
+            <div class="qnAl_right fr">
+                <table width="100%">
+                    <tbody><tr>
+                        <th>年</th>
+                        <th>月</th>
+                        <th>日</th>
+                        <th>时</th>
+                    </tr>
+                    <tr>
+                        <td>乙木</td>
+                        <td>甲木</td>
+                        <td>癸水</td>
+                        <td>庚金</td>
+                    </tr>
+                    <tr>
+                        <td>未土</td>
+                        <td>申金</td>
+                        <td>酉金</td>
+                        <td>申金</td>
+                    </tr>
+                </tbody></table>
+            </div>
+        </div>
+        <div class="qmAl_hanliang qmAliCon clearfix m_b_24 ribBox">
+            <div class="qmAlName">含量</div>
+            <div class="qnAl_left fl">
+                <h4 class="ribbon ribbon_left"><span>正宗算法精确计算五行含量</span></h4>
+                <ul class="hanlinag">
+                    <li><b>金</b><span></span><i>54.62%</i></li>
+                    <li><b>水</b><span></span><i>22.64%</i></li>
+                    <li><b>木</b><span></span><i>9.47%</i></li>
+                    <li><b>火</b><span></span><i>3.24%</i></li>
+                    <li><b>土</b><span></span><i>10.05%</i></li>
+                </ul>
+            </div>
+            <div class="qnAl_right fr">
+                <h4 class="ribbon ribbon_right"><span>业余水平简单相加五行含量</span></h4>
+                <ul class="hanlinag">
+                    <li><b>金</b>4个</li>
+                    <li><b>水</b>1个</li>
+                    <li><b>木</b>2个</li>
+                    <li><b>火</b>0个</li>
+                    <li><b>土</b>1个</li>
+                </ul>
+            </div>
+        </div>
+        <div class="qmAl_xiji qmAliCon clearfix m_b_24 ribBox">
+            <div class="qmAlName">喜忌</div>
+            <div class="fl qnAl_left">
+                <h4 class="ribbon ribbon_left"><span>需要什么则补什么（运算复杂），喜用神选择正确</span></h4>
+                <div class="xjFenxi">分析：日主水的力量比较中和（22.46%）。印星金 偏旺、财星火弱，取食伤木耗印星金的力量，并且 食伤木生财星火。财星火为第二补救。</div>
+                <p>喜用神：木火</p>
+                <p>忌神：金土水</p>
+            </div>
+            <div class="fr qnAl_right">
+                <h4 class="ribbon ribbon_right"><span>缺什么就补什么（运算简单），喜用神选错两个</span></h4>
+                <div class="xjFenxi">分析：此八字金多、木多；火最弱；水土各一个，所以 此八字需要补火土水这三个五行，以达到八字的平衡。</div>
+                <p>喜用神：火土水</p>
+                <p>忌神：金木</p>
+            </div>
+        </div>
+        <div class="qmAl_xuanzi qmAliCon clearfix m_b_24 ribBox">
+            <div class="qmAlName">选字</div>
+            <div class="fl qnAl_left">
+                <h4 class="ribbon ribbon_left"><span>喜用神正确,甄选出来的汉字全部对你有利</span></h4>
+                <p>木：蓓彬颂莲绮芳菲芙果皓蕙婕兰琪蕊... ...</p>
+                <p>火：诺绰黛丹迪宁缇瑾乐凌龄晴甜焱昭婷... </p>
+            </div>
+            <div class="fr qnAl_right">
+                <h4 class="ribbon ribbon_right"><span>喜用神错误,甄选出来的大部分汉字对你有害</span></h4>
+                <p>火：诺绰黛丹迪宁缇瑾乐凌龄晴甜焱昭婷... </p>
+                <p>土：安辰岚娴亚燕旖瑛羽园玥... </p>
+            </div>
+        </div>
+        <div class="qmAl_pingfen qmAliCon clearfix m_b_24 ribBox">
+            <div class="qmAlName">评分</div>
+            <div class="fl qnAl_left">
+                <h4 class="ribbon ribbon_left"><span>三才五格精准评分,从各方面展示名字在三才五格方面的助运效果,助运指数一目了然</span></h4>
+                <ul class="pingfen">
+                    <li class="clearfix"><span class="pfName">三才配置<i>(健康)</i></span><span class="pfNum"><i style="width: 100%;">100</i></span></li>
+                    <li class="clearfix"><span class="pfName">基础运<i>(环境)</i></span><span class="pfNum"><i style="width: 100%;">100</i></span></li>
+                    <li class="clearfix"><span class="pfName">成功运<i>(事业)</i></span><span class="pfNum"><i style="width: 100%;">100</i></span></li>
+                    <li class="clearfix"><span class="pfName">社交运<i>(机遇)</i></span><span class="pfNum"><i style="width: 95%;">95</i></span></li>
+                    <li class="clearfix"><span class="pfName">天格<i>(遗传)</i></span><span class="pfNum"><i style="width: 80%;">80</i></span></li>
+                    <li class="clearfix"><span class="pfName">人格<i>(才华)</i></span><span class="pfNum"><i style="width: 90%;">90</i></span></li>
+                    <li class="clearfix"><span class="pfName">地格<i>(家庭)</i></span><span class="pfNum"><i style="width: 95%;">95</i></span></li>
+                    <li class="clearfix"><span class="pfName">总格<i>(财富)</i></span><span class="pfNum"><i style="width: 85%;">85</i></span></li>
+                    <li class="clearfix"><span class="pfName">外格<i>(朋友)</i></span><span class="pfNum"><i style="width: 90%;">90</i></span></li>
+                </ul>
+            </div>
+            <div class="fr qnAl_right">
+                <h4 class="ribbon ribbon_right"><span>采用传统数字展示，晦涩难懂，不能直接表示具体含义。</span></h4>
+                <ul class="pingfen">
+                    <li class="clearfix"><span class="pfName">三才配置<i>(健康)</i></span><span class="pfNum">60</span></li>
+                    <li class="clearfix"><span class="pfName">基础运<i>(环境)</i></span><span class="pfNum">32</span></li>
+                    <li class="clearfix"><span class="pfName">成功运<i>(事业)</i></span><span class="pfNum">40</span></li>
+                    <li class="clearfix"><span class="pfName">社交运<i>(机遇)</i></span><span class="pfNum">24</span></li>
+                    <li class="clearfix"><span class="pfName">天格<i>(遗传)</i></span><span class="pfNum">21</span></li>
+                    <li class="clearfix"><span class="pfName">人格<i>(才华)</i></span><span class="pfNum">32</span></li>
+                    <li class="clearfix"><span class="pfName">地格<i>(家庭)</i></span><span class="pfNum">17</span></li>
+                    <li class="clearfix"><span class="pfName">总格<i>(财富)</i></span><span class="pfNum">8</span></li>
+                    <li class="clearfix"><span class="pfName">外格<i>(朋友)</i></span><span class="pfNum">26</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div>
+        <p class="qm_shouj qmIocn">首家将“五格、三才、三运”九项吉凶转换为</p>
+        <h3 class="qm_qjdf">精确得分</h3>
+    </div>
+    <div class="sm_banner m_b_45"><img src="./files/qm_img.jpg" alt=""></div>
+    <div class="qm_lc">
+        <h4 class="qm_lc_title">起名流程</h4>
+        <p class="qm_lc_temp">填写起名资料</p>
+        <span class="qm_lc_btn"></span>
+        <p class="qm_lc_temp">下单付款</p>
+        <span class="qm_lc_btn"></span>
+        <p class="qm_lc_temp">老师分析八字命理</p>
+        <span class="qm_lc_btn"></span>
+        <p class="qm_lc_temp">老师根据八字命理起名</p>
+        <span class="qm_lc_btn"></span>
+        <p class="qm_lc_temp">在线立即选取吉祥美名</p>
+    </div>
+
+    <div class="comment">
+    <div class="qmTitle"><h4 class="qmIocn">客户评论</h4></div>
+    <ul class="commList">
+        <li>
+            <h5>订单号 XH9**********014</h5>
+            <p>朋友介绍过来的，说这个最便宜最好用 没有骗我哦，真心不错</p>
+        </li>
+        <li>
+            <h5>订单号 ZO7**********318</h5>
+            <p>学到一些知识，原来五行才是最根本的，而五格只是辅助，专业！</p>
+        </li>
+        <li>
+            <h5>订单号 IQ5**********813</h5>
+            <p>为了给宝宝起名字，找了好多资料去学，累，让网站帮起，方便多了</p>
+        </li>
+        <li>
+            <h5>订单号 CQ2**********315</h5>
+            <p>名字评分都很高，原来好名字是那么多的，先前还想半天</p>
+        </li>
+        <li>
+            <h5>订单号 RE0**********418</h5>
+            <p>在朋友圈看到宝宝起名网可以起名，客服的态度挺好，可选的名字也多</p>
+        </li>
+        <li>
+            <h5>订单号 SK5**********115</h5>
+            <p>还是比较专业的，就是名字太多，选得眼花</p>
+        </li>
+    </ul>
+
+</div>
+
+</div>
+
+
+<div class="wrap">
+
+    <div style="text-align:center;font-size:0.3rem;"><br>
+
+    </div>
+
+
+    <div style="font-size:0.25rem;text-align:center;color:#CCA578">
+        广西诺杰德网络科技有限公司
+        <br>
+    </div>
+    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1263096579'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s22.cnzz.com/stat.php%3Fid%3D1263096579%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script><span id="cnzz_stat_icon_1263096579"><a href="http://www.cnzz.com/stat/website.php?web_id=1263096579" target="_blank" title="站长统计"><img border="0" hspace="0" vspace="0" src="./files/pic1.gif"></a></span><script src="./files/stat.php" type="text/javascript"></script><script src="./files/core.php" charset="utf-8" type="text/javascript"></script>    <div class="wrap" style="height:0.7rem;">
+
+    </div>
+
+
+
+</div>
+
+    <input type="hidden" value="" id="PATH_LEVEL_ONE">
+    <input type="hidden" value="ws://ws.s5.midea4s.com:12570" id="SOCKET_URL">
+    <input type="hidden" value="http://orders.suan5.net/orders" id="ORDER_CENTER_URL">
+    <input type="hidden" value="wap" id="SITEMAP_TYPE">
+    <input type="hidden" value="{}" id="PATH_PARAMS">
+<!--
+<script>
+  var _hmt = _hmt || [];
+  (function () {
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?6800d057c0435427c27db4b79be13c74";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>-->
+<a href="http://p.qiao.baidu.com/im/index?siteid=8080096&amp;ucid=18792804" target="_blank" style="display: block;position: fixed;right: 0; bottom: 20%;z-index: 999;background: #c6834b;font-family: &#39;微软雅黑&#39;;font-size: 5vw;color: #fff;font-weight:bold;padding:3%;text-decoration: none;width: 8%;text-align: center;border-radius: 8px 0 0 8px;box-sizing:content-box;">在线咨询</a>
+
+ </body></html>
